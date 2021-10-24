@@ -1,0 +1,23 @@
+PS K:\laravel\todotask> php artisan passport:install
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: 8PIsHTKguXeDdmH58lxb1BD3NVlugCmeHmcvQLnp
+Password grant client created successfully.
+Client ID: 2
+Client secret: 8sCtCwdARdsQ61sQfufM07k6GkCADBVTPhV3Knly
+
+
+----------------------------------------------------------------------------------------------------------------
+
+postman json link :
+
+https://www.postman.com/collections/7492af87d425db2218a5
+
+----------------------------------------------------------------------------------------------------------------
+
+postman collection link :
+
+https://go.postman.co/workspace/My-Workspace~a2635ff4-2056-4182-8eaa-a38a40c9e4d7/collection/13140716-cb670ba6-e2f7-4877-90b0-f0d5c8d70ff2
+
+----------------------------------------------------------------------------------------------------------------

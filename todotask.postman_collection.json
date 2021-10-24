@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "cb670ba6-e2f7-4877-90b0-f0d5c8d70ff2",
+		"name": "todotask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "nisit",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "savaliya",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8469380885",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nisit54@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "5287445rk103",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/user-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "kaushikranpariya99@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "5287445rk9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user-login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/user-detail",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user-detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/create-task",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task_title",
+							"value": "create todo task for interview 2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "evolution infosystem company task 2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-task",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/task/3",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/task/2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/update-task",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDZkYzJlYjA4ODdmYmU1ZjI5OTFmMzE1MDI5NDVhYzExNDNlNzY1Yzg3OWVkNDkxYWVhMTI1NTA3MWJhZGQ3NzdjNWQyNDg2MTcxMzk5Y2QiLCJpYXQiOjE2MzUxMDczNzQuMjg4NTQ0LCJuYmYiOjE2MzUxMDczNzQuMjg4NTU5LCJleHAiOjE2NjY2NDMzNzQuMTkyMDAyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kFcYv69IZSOzc_27YizNt1NIxaEcr1p3AAyEClr5cBRc6R-HSqaKOFyo3h9RpMzsxzC3jqM1w4ajTAiw6tL9JmpuBAR0ZrP4ri40TbGmkb_8s0-Z8GLsadROHqdA-CrG1gwMW1G85dTl7_fjd3uT-pac8TJswRoiCRxi3RALtPyztJ_CFe9X1peeQmd0sZ6APfm9_3XS8kAG0zvD2Ohl4hJ2w99Y_nTqahjosMDaN78f1MxXh9aQ8ZfJqM_aJKxtznHeuRSMFslz31wLD_0sYJa7e8GovQj0sN4Z6LEAuPAI0yYhNl2Fcge_DXHBQjjiauK1OcrRpS03n68RrdGWF2U8TSRs0aBubLPuR_HQOjCRqsS4-BPdb7iNrI9z-9d2nT0GF52x6WOyLnsRZHg-rhwvQAAWQHHUZqX0iHRyYVp7aKhS5byEoN2EC9qNOEaCkimstMYlUS1r6qqyrvvbCEQP6L_dpHyIIM2VIUQKlxSjnoim2c5y6gB12rP-dTmKaebGwjvr1tm2dZrV1uTPuDIK7M9-eHam4Tz4RVgnlAn-TTzchaulUS26931r53XDuw3xYpLIB4zh5N0n5G2KAED7loBdffBsKjljqYuHQtRlpVrxrQQWGMEmHRw-X01Yg49VWaZ48sPeoxeDTxXcVfaqrLDTvGU5PY9o0hpO7WI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task_title",
+							"value": "kaushik company task",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "evolution infosystem",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text"
+						},
+						{
+							"key": "task_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-task",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-task"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
